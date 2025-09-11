@@ -1,12 +1,54 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useEffect } from "react";
+import Navigation from "@/components/Navigation";
+import HeroSection from "@/components/HeroSection";
+import AboutSection from "@/components/AboutSection";  
+import Footer from "@/components/Footer";
 
 const Index = () => {
+  useEffect(() => {
+    // Add fade-in animation observer
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-fade-in');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    // Observe all fade-in elements
+    const fadeElements = document.querySelectorAll('.fade-in');
+    fadeElements.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      {/* SEO Meta Tags */}
+      <head>
+        <title>Gilda Cakes - Confeitaria Artesanal | Bolos Personalizados Florianópolis</title>
+        <meta 
+          name="description" 
+          content="Confeitaria artesanal especializada em bolos personalizados e doces especiais em Florianópolis. Site em construção - Entre em contato para encomendas."
+        />
+        <meta name="keywords" content="confeitaria, bolos personalizados, doces artesanais, aniversário, Florianópolis, Gilda Cakes" />
+        <meta property="og:title" content="Gilda Cakes - Confeitaria Artesanal" />
+        <meta property="og:description" content="Bolos artísticos personalizados e doces especiais. Atendemos toda a Grande Florianópolis." />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://gildacakes.com.br" />
+      </head>
+
+      <Navigation />
+      
+      <main>
+        <HeroSection />
+        <AboutSection />
+      </main>
+      
+      <Footer />
     </div>
   );
 };
