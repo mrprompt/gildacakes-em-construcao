@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Facebook, Instagram, Phone } from "lucide-react";
+import logoImage from "@/assets/gildacakes-logo.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,7 +33,7 @@ const Navigation = () => {
           <div className="flex items-center space-x-2">
             <div className="w-12 h-12 bg-gradient-to-br from-marsala to-marsala-light rounded-full flex items-center justify-center">
               <span className="text-white font-bold text-lg">
-                <img src="/gildacakes-logo.png" alt="G" />
+                <img src={logoImage} alt="G" />
               </span>
             </div>
             <span className="text-xl font-bold text-foreground">Gilda Cakes</span>
