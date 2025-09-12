@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { Cake, Heart, MapPin, Star } from "lucide-react";
+import { Cake, CakeSlice, Heart, MapPin, Star } from "lucide-react";
 
 const AboutSection = () => {
   const services = [
@@ -10,13 +10,18 @@ const AboutSection = () => {
     },
     {
       icon: <Heart className="w-8 h-8 text-marsala" />,
-      title: "Doces Especiais",
+      title: "Bolos Espatulados",
       description: "Variedade de doces artesanais feitos com ingredientes selecionados."
     },
     {
       icon: <Star className="w-8 h-8 text-marsala" />,
-      title: "Qualidade Premium",
+      title: "Bolos Scrapbook",
       description: "Cada produto é uma obra de arte, feita com carinho e dedicação."
+    },
+    {
+      icon: <CakeSlice className="w-8 h-8 text-marsala" />,
+      title: "Naked Cakes",
+      description: "Bolos feitos com carinho e atenção aos detalhes."
     }
   ];
 
@@ -32,7 +37,9 @@ const AboutSection = () => {
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Transformando momentos especiais em memórias doces e inesquecíveis há mais de uma década.
+            Desde 2000 a doceira Gilda Ferreira conquista todos os paladares com suas Tortas, Bolos e Doces. 
+            Cada um carrega em si um segredo aprendido em algum canto do Brasil por onde já passou. 
+            Experimente e descubra!
           </p>
         </div>
 
@@ -109,7 +116,7 @@ const AboutSection = () => {
             <div className="bg-gradient-to-r from-marsala/10 to-gold/10 rounded-2xl p-6 border border-marsala/20">
               <div className="grid grid-cols-2 gap-4 text-center">
                 <div>
-                  <div className="text-2xl font-bold text-marsala">15+</div>
+                  <div className="text-2xl font-bold text-marsala">25+</div>
                   <div className="text-sm text-muted-foreground">Anos de Experiência</div>
                 </div>
                 <div>

@@ -29,7 +29,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       {/* SEO Meta Tags */}
       <head>
-        <title>Gilda Cakes - Confeitaria Artesanal | Bolos Personalizados Florianópolis</title>
+        <title>Gilda Cakes &lsaquo; Tortas, Bolos e Doces em Florianópolis. (48) 98816-4353</title>
         <meta 
           name="description" 
           content="Confeitaria artesanal especializada em bolos personalizados e doces especiais em Florianópolis. Site em construção - Entre em contato para encomendas."
@@ -38,7 +38,7 @@ const Index = () => {
         <meta property="og:title" content="Gilda Cakes - Confeitaria Artesanal" />
         <meta property="og:description" content="Bolos artísticos personalizados e doces especiais. Atendemos toda a Grande Florianópolis." />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://gildacakes.com.br" />
+        <link rel="canonical" href="https://www.gildacakes.com.br" />
       </head>
 
       <Navigation />

@@ -20,8 +20,9 @@ const Footer = () => {
               <span className="text-2xl font-bold text-foreground">Gilda Cakes</span>
             </div>
             <p className="text-muted-foreground leading-relaxed">
-              Confeitaria artesanal especializada em bolos personalizados e doces especiais. 
-              Transformando seus momentos especiais em memórias doces e inesquecíveis.
+              Desde 2000 a doceira Gilda Ferreira conquista todos os paladares com suas Tortas, Bolos e Doces. 
+              Cada um carrega em si um segredo aprendido em algum canto do Brasil por onde já passou. 
+              <b>Experimente e descubra!</b>
             </p>
             <div className="flex space-x-4">
               <a 
@@ -52,29 +53,15 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <Phone size={20} className="text-marsala mt-1 flex-shrink-0" />
                 <div>
-                  <p className="font-medium text-foreground">(48) 99999-9999</p>
+                  <p className="font-medium text-foreground">(48) 3248.4986 • (48) 98816-4353</p>
                   <p className="text-sm text-muted-foreground">WhatsApp disponível</p>
-                </div>
-              </div>
-              <div className="flex items-start space-x-3">
-                <Mail size={20} className="text-marsala mt-1 flex-shrink-0" />
-                <div>
-                  <p className="font-medium text-foreground">contato@gildacakes.com.br</p>
-                  <p className="text-sm text-muted-foreground">Resposta em até 2 horas</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin size={20} className="text-marsala mt-1 flex-shrink-0" />
                 <div>
-                  <p className="font-medium text-foreground">Grande Florianópolis - SC</p>
-                  <p className="text-sm text-muted-foreground">Entregamos em toda a região</p>
-                </div>
-              </div>
-              <div className="flex items-start space-x-3">
-                <Clock size={20} className="text-marsala mt-1 flex-shrink-0" />
-                <div>
-                  <p className="font-medium text-foreground">Seg - Sáb: 8h às 18h</p>
-                  <p className="text-sm text-muted-foreground">Domingo: Sob consulta</p>
+                  <p className="font-medium text-foreground">Rua Felipe Neves, 160 - Estreito, Florianópolis - SC</p>
+                  <p className="text-sm text-muted-foreground">Atendemos toda a grande Florianópolis</p>
                 </div>
               </div>
             </div>
@@ -92,29 +79,11 @@ const Footer = () => {
               <Button 
                 size="lg"
                 className="w-full bg-marsala hover:bg-marsala-light text-white font-semibold py-3 rounded-xl transition-all duration-300 hover-lift"
-                onClick={() => window.open('https://wa.me/5548999999999', '_blank')}
+                onClick={() => window.open('https://wa.me/5548988164353', '_blank')}
               >
                 <Phone size={18} className="mr-2" />
                 WhatsApp
               </Button>
-              
-              <Button 
-                variant="outline"
-                size="lg"
-                className="w-full border-gold text-gold hover:bg-gold hover:text-background font-semibold py-3 rounded-xl transition-all duration-300 hover-lift"
-                onClick={() => window.location.href = 'mailto:contato@gildacakes.com.br'}
-              >
-                <Mail size={18} className="mr-2" />
-                E-mail
-              </Button>
-            </div>
-
-            {/* Emergency Contact */}
-            <div className="bg-marsala/10 border border-marsala/20 rounded-xl p-4">
-              <p className="text-sm text-marsala font-medium mb-1">🚨 Pedidos Urgentes</p>
-              <p className="text-xs text-muted-foreground">
-                Para pedidos com menos de 48h de antecedência, entre em contato via WhatsApp.
-              </p>
             </div>
           </div>
         </div>
@@ -123,7 +92,7 @@ const Footer = () => {
         <div className="border-t border-border/50 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm text-muted-foreground text-center md:text-left">
-              © 2024 Gilda Cakes. Todos os direitos reservados. | 
+              © 2025 Gilda Cakes. Todos os direitos reservados. | 
               <span className="text-gold ml-1">Confeitaria Artesanal Premium</span>
             </p>
             

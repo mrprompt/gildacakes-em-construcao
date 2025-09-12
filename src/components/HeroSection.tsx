@@ -47,26 +47,6 @@ const HeroSection = () => {
                 <Phone size={20} className="mr-2" />
                 Entre em Contato Agora
               </Button>
-              <Button 
-                variant="outline"
-                size="lg"
-                className="border-gold text-gold hover:bg-gold hover:text-background font-semibold px-8 py-4 text-lg rounded-xl transition-all duration-300 hover-lift"
-              >
-                <Mail size={20} className="mr-2" />
-                Solicitar Orçamento
-              </Button>
-            </div>
-
-            {/* Quick Info */}
-            <div className="flex items-center justify-center lg:justify-start space-x-6 text-sm text-muted-foreground pt-4">
-              <div className="flex items-center space-x-1">
-                <Clock size={16} className="text-gold" />
-                <span>Entrega em 24h</span>
-              </div>
-              <div className="flex items-center space-x-1">
-                <Phone size={16} className="text-gold" />
-                <span>Atendimento personalizado</span>
-              </div>
             </div>
           </div>
 

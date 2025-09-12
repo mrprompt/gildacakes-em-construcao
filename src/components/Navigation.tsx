@@ -31,7 +31,9 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <div className="w-12 h-12 bg-gradient-to-br from-marsala to-marsala-light rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-lg">G</span>
+              <span className="text-white font-bold text-lg">
+                <img src="/gildacakes-logo.png" alt="G" />
+              </span>
             </div>
             <span className="text-xl font-bold text-foreground">Gilda Cakes</span>
           </div>
@@ -45,7 +47,7 @@ const Navigation = () => {
               Sobre a Gilda Cakes
             </button>
             <a 
-              href="https://facebook.com" 
+              href="http://www.facebook.com/gildacakes" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-foreground hover:text-marsala transition-colors duration-300"
@@ -53,7 +55,7 @@ const Navigation = () => {
               <Facebook size={20} />
             </a>
             <a 
-              href="https://instagram.com" 
+              href="https://www.instagram.com/gildacakesfloripa/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-foreground hover:text-marsala transition-colors duration-300"
