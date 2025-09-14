@@ -35,7 +35,7 @@ const Footer = () => {
                 <Facebook size={20} className="text-foreground hover:text-white" />
               </a>
               <a 
-                href="https://instagram.com/gildacakes" 
+                href="https://instagram.com/gildacakesfloripa" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-secondary hover:bg-gold rounded-full flex items-center justify-center transition-all duration-300 hover-lift"
